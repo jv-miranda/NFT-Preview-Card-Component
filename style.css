@@ -29,8 +29,36 @@ body {
 
 /* MAIN IMAGE */
 .main-image {
+    position: relative;
+    border-radius: 10px;
     width: 260px;
     height: 260px;
+}
+
+.image-equilibrium {
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.main-image-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(178, 100%, 50%, 0.5);
+    opacity: 0;
+    transition: opacity 0.30s ;
+}
+
+.main-image-overlay:hover {
+    opacity: 1;
 }
 
 /* HEADER TEXT */
@@ -43,6 +71,11 @@ body {
     color: hsl(0, 0%, 100%);
     margin-bottom: 15px;
     font-weight: 400;
+    transition: 0.30s;
+}
+
+#p1:hover {
+    color: hsl(178, 100%, 50%);
 }
 
 #p2 {
@@ -126,4 +159,10 @@ body {
 #p6 {
     color: white;
     padding-left: 5px;
+    text-decoration: none;
+    transition: 0.30s;
+}
+
+#p6:hover {
+    color: hsl(178, 100%, 50%);
 }
