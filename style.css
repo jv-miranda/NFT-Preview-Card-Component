@@ -11,8 +11,8 @@
 body {
     display: flex;
     justify-content: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    align-items: center;
+    min-height: 100vh;
     background-color: hsl(217, 54%, 11%);
 }
 
@@ -67,7 +67,11 @@ body {
     margin: 15px 0px;
 }
 
-#p1 {
+.h1-link {
+    text-decoration: none;
+}
+
+h1 {
     font-family: 'Ubuntu', sans-serif;
     color: hsl(0, 0%, 100%);
     margin-bottom: 15px;
@@ -75,7 +79,7 @@ body {
     transition: 0.30s;
 }
 
-#p1:hover {
+h1:hover {
     color: hsl(178, 100%, 50%);
 }
 
